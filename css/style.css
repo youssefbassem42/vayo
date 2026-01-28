@@ -1,7 +1,8 @@
 /* =========================================
    CORE / COMMON STYLES
    ========================================= */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 :root {
     --bg-primary: #F6F4F1;
@@ -14,7 +15,7 @@
     --accent-secondary: #A7B3A2;
     --accent-decorative: #C8B2A4;
     --border-color: #DED8CF;
-    --font-heading: 'Playfair Display', serif;
+    --font-heading: "Eagle Lake", serif;
     --font-body: 'Lato', sans-serif;
     --header-height: 80px;
     --container-padding: 1.5rem;
@@ -268,11 +269,7 @@ img {
     margin-top: 4rem;
     background: var(--bg-primary);
 }
-.logo {
-    font-family: "Eagle Lake", serif;
-    font-weight: 400;
-    font-style: normal;
-}
+
 /* COMMON MEDIA QUERIES */
 @media (min-width: 768px) {
     .hamburger {
