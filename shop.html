@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop VAYO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">VAYO</a>
+            <div class="nav-icons">
+                <a href="cart.html" class="nav-icon relative">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-badge">0</span>
+                </a>
+                <div class="nav-icon" id="theme-toggle"><i class="fas fa-moon"></i></div>
+            </div>
+            <!-- Search Modal (Reused) -->
+            <div class="search-modal">
+                <input type="text" class="search-input" placeholder="Search...">
+            </div>
+        </div>
+    </header>
+
+    <div class="container section-padding">
+        <!-- Filters -->
+        <div class="filters-bar">
+            <!-- Removed Unisex as requested -->
+            <a href="?cat=all" class="filter-link" data-cat="all">All</a>
+            <a href="?cat=men" class="filter-link" data-cat="men">Men</a>
+            <a href="?cat=women" class="filter-link" data-cat="women">Women</a>
+            <a href="?cat=oil" class="filter-link" data-cat="oil">Oil Candles</a>
+            <a href="?cat=sets" class="filter-link" data-cat="sets">Sets</a>
+        </div>
+
+        <div style="margin-bottom:2rem; display:flex; justify-content:space-between; align-items:center;">
+            <span>Max Price: <span id="price-display">$40</span></span>
+            <input type="range" id="price-range" min="20" max="40" value="40">
+        </div>
+
+        <div class="product-grid" id="product-grid">
+            <!-- JS -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container"
+            style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:2rem; padding-bottom:3rem; border-bottom:1px solid var(--border-color);">
+            <div>
+                <h3 style="margin-bottom:1rem; font-size:1.5rem;">VAYO</h3>
+                <p style="color:var(--text-secondary); line-height:1.6;">Luxury candles inspired by the warmth of oud
+                    and the silence of the desert.</p>
+            </div>
+            <div>
+                <h4 style="margin-bottom:1rem; text-transform:uppercase; font-size:0.9rem; letter-spacing:1px;">Shop
+                </h4>
+                <ul style="display:flex; flex-direction:column; gap:0.5rem;">
+                    <li><a href="shop.html?cat=all" style="color:var(--text-secondary);">All Products</a></li>
+                    <li><a href="shop.html?cat=men" style="color:var(--text-secondary);">Men's Collection</a></li>
+                    <li><a href="shop.html?cat=women" style="color:var(--text-secondary);">Women's Collection</a></li>
+                    <li><a href="shop.html?cat=oil" style="color:var(--text-secondary);">Oil Candles</a></li>
+                    <li><a href="shop.html?cat=sets" style="color:var(--text-secondary);">Gift Sets</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom:1rem; text-transform:uppercase; font-size:0.9rem; letter-spacing:1px;">Account
+                </h4>
+                <ul style="display:flex; flex-direction:column; gap:0.5rem;">
+                    <li><a href="login.html" style="color:var(--text-secondary);">Login</a></li>
+                    <li><a href="register.html" style="color:var(--text-secondary);">Register</a></li>
+                    <li><a href="cart.html" style="color:var(--text-secondary);">My Cart</a></li>
+                    <li><a href="forgot-password.html" style="color:var(--text-secondary);">Recovery</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom:1rem; text-transform:uppercase; font-size:0.9rem; letter-spacing:1px;">Explore
+                </h4>
+                <ul style="display:flex; flex-direction:column; gap:0.5rem;">
+                    <li><a href="contact.html" style="color:var(--text-secondary);">Our Story</a></li>
+                    <li><a href="contact.html" style="color:var(--text-secondary);">Contact Us</a></li>
+                    <li><a href="#" style="color:var(--text-secondary);">Shipping</a></li>
+                    <li><a href="#" style="color:var(--text-secondary);">Returns</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container text-center" style="padding-top:2rem;">
+            <p style="color:var(--text-muted); font-size:0.8rem;">&copy; 2026 VAYO. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/pages/shop.js"></script>
+</body>
+
+</html>

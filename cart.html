@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | VAYO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">VAYO</a>
+            <div class="nav-icons">
+                <div class="nav-icon" id="theme-toggle"><i class="fas fa-moon"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container section-padding cart-page-layout">
+        <div>
+            <h1 style="margin-bottom: 2rem;">Your Bag</h1>
+            <table class="cart-table" id="cart-table">
+                <!-- Populated by JS -->
+                <thead>
+                    <tr>
+                        <th style="width: 100px;">Product</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="cart-body">
+                    <!-- Rows -->
+                </tbody>
+            </table>
+            <div id="empty-cart-msg" style="display:none; text-align:center; padding: 2rem;">
+                <p>Your cart is empty.</p>
+                <a href="shop.html" class="btn btn-outline" style="margin-top:1rem;">Start Shopping</a>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h3>Summary</h3>
+            <div class="summary-row" style="margin-top: 2rem;">
+                <span>Subtotal</span>
+                <span id="subtotal">$0.00</span>
+            </div>
+            <div class="summary-row">
+                <span>VAT (15%)</span>
+                <span id="vat">$0.00</span>
+            </div>
+            <div class="summary-row summary-total">
+                <span>Grand Total</span>
+                <span id="total">$0.00</span>
+            </div>
+            <button class="btn btn-primary" style="width:100%; margin-top:2rem;">Checkout</button>
+        </div>
+    </div>
+
+    <script type="module" src="js/pages/cart.js"></script>
+</body>
+
+</html>

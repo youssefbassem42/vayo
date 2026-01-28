@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAYO | Premium Candles</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages/index.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+            <a href="index.html" class="logo">VAYO</a>
+
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="shop.html?cat=men" class="nav-link">Men</a>
+                <a href="shop.html?cat=women" class="nav-link">Women</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-icons">
+                <div class="nav-icon search-icon"><i class="fas fa-search"></i></div>
+                <a href="cart.html" class="nav-icon cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-badge">0</span>
+                </a>
+                <a href="login.html" class="nav-icon"><i class="fas fa-user"></i></a>
+                <div class="nav-icon" id="theme-toggle"><i class="fas fa-moon"></i></div>
+            </div>
+
+            <!-- Search Input Modal (Hidden by default) -->
+            <div class="search-modal">
+                <input type="text" class="search-input" placeholder="Search VAYO Collection... (Press Enter)">
+            </div>
+        </div>
+
+        <div class="mobile-menu-drawer">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="shop.html?cat=men" class="mobile-link">Men</a>
+            <a href="shop.html?cat=women" class="mobile-link">Women</a>
+            <a href="shop.html" class="mobile-link">Shop</a>
+        </div>
+    </header>
+
+    <!-- HERO SLIDER -->
+    <section class="hero">
+        <!-- Text box container removed, text directly on image via absolute pos -->
+        <div class="hero-slide active" style="background-image: url('img/men_hero_section.png');">
+            <div class="hero-content">
+                <h1 class="hero-title">Candlelight,<br>Warmth,<br>& Calm.</h1>
+            </div>
+            <div class="hero-btn-container">
+                <a href="shop.html" class="btn btn-primary">Shop Now</a>
+            </div>
+        </div>
+        <div class="hero-slide" style="background-image: url('img/women_hero_section.png');">
+            <div class="hero-content">
+                <h1 class="hero-title">The Essence<br>of Light.</h1>
+            </div>
+            <div class="hero-btn-container">
+                <a href="shop.html" class="btn btn-primary">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUB-HERO SECTION -->
+    <section class="sub-hero">
+        <div class="video-wrapper">
+            <!-- Ensure video file exists or fallback to image -->
+            <video autoplay muted loop playsinline poster="img/women_hero_section.png">
+                <source src="img/video.mp4" type="video/mp4">
+            </video>
+            <div class="blur-overlay"></div>
+            <h2 class="sub-hero-text">شمعة تطفئ العالم#</h2>
+        </div>
+    </section>
+
+    <!-- MEN'S SECTION (SPLIT) -->
+    <!-- Image Left, Content Right. Text Right, Button Left of text block -->
+    <section class="split-section men-section">
+        <div class="split-img" style="background-image: url('img/men_hero_section.png');"></div>
+        <div class="split-content">
+            <h2>For Him</h2>
+            <p>Deep, rich, and unapologetically bold. A scent for the sanctuary of the modern man.</p>
+            <div class="split-action">
+                <a href="shop.html?cat=men" class="btn btn-primary">Shop Men</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WOMEN'S SECTION (ZIG ZAG) -->
+    <!-- Image Right, Content Left. Text Left, Button Right of text block -->
+    <section class="split-section women-section">
+        <div class="split-img" style="background-image: url('img/women_hero_section.png');"></div>
+        <div class="split-content">
+            <h2>For Her</h2>
+            <p>Soft florals dancing on a breeze of amber. Elegance redefined in wax.</p>
+            <div class="split-action">
+                <a href="shop.html?cat=women" class="btn btn-primary">Shop Women</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews-section" style="background-image: url('img/all_products.png');">
+        <div class="reviews-backdrop"></div>
+        <div class="container reviews-container">
+            <h2 class="text-center" style="color:#fff; margin-bottom:3rem; position:relative; z-index:2;">The VAYO
+                Experience</h2>
+            <div class="reviews-track">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container"
+            style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:2rem; padding:3rem; border-bottom:1px solid var(--border-color);">
+            <div>
+                <h3 style="margin-bottom:1rem; font-size:1.5rem;">VAYO</h3>
+                <p style="color:var(--text-secondary); line-height:1.6;">Luxury candles inspired by the warmth of oud
+                    and the silence of the desert.</p>
+            </div>
+            <div>
+                <h4 style="margin-bottom:1rem; text-transform:uppercase; font-size:0.9rem; letter-spacing:1px;">Shop
+                </h4>
+                <ul style="display:flex; flex-direction:column; gap:0.5rem;">
+                    <li><a href="shop.html?cat=all" style="color:var(--text-secondary);">All Products</a></li>
+                    <li><a href="shop.html?cat=men" style="color:var(--text-secondary);">Men's Collection</a></li>
+                    <li><a href="shop.html?cat=women" style="color:var(--text-secondary);">Women's Collection</a></li>
+                    <li><a href="shop.html?cat=oil" style="color:var(--text-secondary);">Oil Candles</a></li>
+                    <li><a href="shop.html?cat=sets" style="color:var(--text-secondary);">Gift Sets</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom:1rem; text-transform:uppercase; font-size:0.9rem; letter-spacing:1px;">Account
+                </h4>
+                <ul style="display:flex; flex-direction:column; gap:0.5rem;">
+                    <li><a href="login.html" style="color:var(--text-secondary);">Login</a></li>
+                    <li><a href="register.html" style="color:var(--text-secondary);">Register</a></li>
+                    <li><a href="cart.html" style="color:var(--text-secondary);">My Cart</a></li>
+                    <li><a href="forgot-password.html" style="color:var(--text-secondary);">Recovery</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="margin-bottom:1rem; text-transform:uppercase; font-size:0.9rem; letter-spacing:1px;">Explore
+                </h4>
+                <ul style="display:flex; flex-direction:column; gap:0.5rem;">
+                    <li><a href="contact.html" style="color:var(--text-secondary);">Our Story</a></li>
+                    <li><a href="contact.html" style="color:var(--text-secondary);">Contact Us</a></li>
+                    <li><a href="#" style="color:var(--text-secondary);">Shipping</a></li>
+                    <li><a href="#" style="color:var(--text-secondary);">Returns</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container text-center" style="padding-top:2rem;">
+            <p style="color:var(--text-muted); font-size:0.8rem;">&copy; 2026 VAYO. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/pages/index.js"></script>
+</body>
+
+</html>

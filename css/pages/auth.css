@@ -1,0 +1,35 @@
+/* =========================================
+   AUTH / CONTACT STYLES
+   ========================================= */
+.auth-container {
+    max-width: 450px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: var(--surface);
+    border: 1px solid var(--border-color);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+}

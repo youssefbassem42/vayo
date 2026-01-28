@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | VAYO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">VAYO</a>
+        </div>
+    </header>
+
+    <div class="auth-container">
+        <h2 class="text-center" style="margin-bottom:2rem;">Login</h2>
+        <form>
+            <div class="form-group">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-input" required>
+            </div>
+            <button class="btn btn-primary" style="width:100%;">Sign In</button>
+            <div style="display:flex; justify-content:space-between; margin-top:1.5rem; font-size:0.9rem;">
+                <a href="forgot-password.html" style="color:var(--text-secondary); text-decoration:underline;">Forgot
+                    Password?</a>
+                <a href="register.html" style="color:var(--accent-primary);">Create Account</a>
+            </div>
+        </form>
+    </div>
+
+    <script type="module" src="js/pages/auth.js"></script>
+</body>
+
+</html>
