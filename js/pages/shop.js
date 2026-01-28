@@ -42,7 +42,7 @@ function initShop() {
         grid.innerHTML = list.map(p => `
             <div class="product-card">
                 <div class="card-img-wrapper">
-                    <a href="product.html?id=${p.id}"><img src="${p.image}" alt="${p.name}"></a>
+                    <a href="product.html?id=${p.id}"><img src="${p.image}" alt="${p.name}" loading="lazy"></a>
                 </div>
                 <h3 style="font-size:1.1rem; margin-bottom:0.5rem;">${p.name}</h3>
                 <p style="color:var(--accent-primary); font-weight:700;">$${p.price}</p>

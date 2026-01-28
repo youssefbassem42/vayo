@@ -1,6 +1,6 @@
 # VAYO - Luxury Candle eCommerce
 
-![VAYO Preview](img/all_products.png)
+![VAYO Preview](imgs/all_products.webp)
 
 **VAYO** is a premium, ultra-luxury eCommerce interface designed for high-end candle brands. Built with a focus on aesthetics, "Night Candlelight" dark mode, and smooth user experience, it mimics the feel of top-tier luxury retail sites.
 

@@ -4,7 +4,7 @@ export const products = [
         name: "Cedar Drift",
         price: 20,
         category: "men",
-        image: "img/cedar-drift.png",
+        image: "imgs/cedar-drift.webp",
         description: "Cedarwood, vetiver — calm forest warmth.",
         badge: "Bestseller"
     },
@@ -13,7 +13,7 @@ export const products = [
         name: "Noir Ember",
         price: 23,
         category: "men",
-        image: "img/noir-ember.png",
+        image: "imgs/noir-ember.webp",
         description: "Deep smoke, amber, smokey woods — subtle strength.",
         badge: "New"
     },
@@ -22,7 +22,7 @@ export const products = [
         name: "Urban Dusk Oil Candle",
         price: 32,
         category: "oil",
-        image: "img/ubran.png",
+        image: "imgs/ubran.webp",
         description: "Bergamot, oud essence — evening city breeze.",
         badge: null
     },
@@ -31,7 +31,7 @@ export const products = [
         name: "Ironwood Essence",
         price: 24,
         category: "men",
-        image: "img/ironwood.png",
+        image: "imgs/ironwood.webp",
         description: "Resin & sandalwood fusion — grounded, smooth.",
         badge: null
     },
@@ -40,7 +40,7 @@ export const products = [
         name: "Vanilla Dew",
         price: 20,
         category: "women",
-        image: "img/vanilla.png",
+        image: "imgs/vanilla.webp",
         description: "Creamy vanilla, soft musk — calm & soothing",
         badge: "Limited"
     },
@@ -49,7 +49,7 @@ export const products = [
         name: "Blossom Veil Oil Candle",
         price: 20,
         category: "oil",
-        image: "img/bloosom.png",
+        image: "imgs/bloosom.webp",
         description: "Magnolia, soft citrus — uplifting, gentle.",
         badge: "Bestseller"
     },
@@ -58,7 +58,7 @@ export const products = [
         name: "Honey Luna",
         price: 40,
         category: "sets",
-        image: "img/honey-luna.png",
+        image: "imgs/honey-luna.webp",
         description: "Honey nectar, jasmine — warm romantic glow.",
         badge: null
     },

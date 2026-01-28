@@ -1,11 +1,13 @@
 /* =========================================
    CORE / COMMON JS
    ========================================= */
-export { products } from "./data.js";
+import { products } from "./data.js";
+export { products };
 
 export const state = {
     cart: JSON.parse(localStorage.getItem('vayo_cart')) || [],
-    theme: localStorage.getItem('vayo_theme') || 'light'
+    theme: localStorage.getItem('vayo_theme') || 'light',
+    user: JSON.parse(localStorage.getItem('vayo_user')) || null
 };
 
 export function saveCart() {
@@ -22,6 +24,26 @@ export function updateCartBadge() {
     }
 }
 
+export function checkAuth() {
+    const userIcon = document.querySelector('.fa-user');
+    if (userIcon && state.user) {
+        // Change user icon to checkmark or something to indicate logged in, or link to profile
+        userIcon.parentElement.href = "#"; // Prevent login link
+        userIcon.style.color = "var(--accent-primary)";
+        userIcon.title = `Logged in as ${state.user.username}`;
+
+        // Add logout option? For now just visual indicator
+        userIcon.parentElement.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (confirm(`Logout from ${state.user.username}?`)) {
+                localStorage.removeItem('vayo_user');
+                state.user = null;
+                window.location.reload();
+            }
+        });
+    }
+}
+
 export function initGlobal() {
     // Theme
     document.documentElement.setAttribute('data-theme', state.theme);
@@ -35,6 +57,7 @@ export function initGlobal() {
     }
 
     updateCartBadge();
+    checkAuth();
 
     // Search Modal
     const trig = document.querySelector('.search-icon');
@@ -60,7 +83,7 @@ export function initGlobal() {
     }
 }
 
-// Attach global helpers to window even in ES modules if needed for event handlers
+// Attach global helpers to window
 window.addToCart = (id, qty = 1) => {
     const p = products.find(x => x.id === id);
     if (p) {
@@ -69,5 +92,7 @@ window.addToCart = (id, qty = 1) => {
         else state.cart.push({ ...p, qty });
         saveCart();
         alert('Added to Bag');
+    } else {
+        console.error("Product not found ID:", id);
     }
 };
