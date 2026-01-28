@@ -268,7 +268,11 @@ img {
     margin-top: 4rem;
     background: var(--bg-primary);
 }
-
+.logo {
+    font-family: "Eagle Lake", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 /* COMMON MEDIA QUERIES */
 @media (min-width: 768px) {
     .hamburger {
