@@ -32,17 +32,23 @@
     </header>
 
     <!-- Hero with Text Overlay -->
+    <!-- Hero with Video Background -->
     <div
-        style="height: 50vh; background-image: url('img/men_hero_section.png'); background-size: cover; position: relative; display: flex; justify-content: center; align-items: center;">
-        <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);"></div>
-        <h1 style="position:relative; color:#fff; font-size: 3rem; letter-spacing: 2px;">About Us</h1>
+        style="height: 60vh; position: relative; display: flex; justify-content: center; align-items: center; overflow: hidden;">
+        <video autoplay muted loop playsinline
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+            <source src="img/VAYO_Candle_Brand_Video_Generation.mp4" type="video/mp4">
+        </video>
+        <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index: 1;">
+        </div>
+        <h1 style="position:relative; color:#fff; font-size: 3rem; letter-spacing: 2px; z-index: 2;">About Us</h1>
     </div>
 
     <div class="container section-padding">
         <!-- Centered Medium Width Form -->
         <div style="max-width: 600px; margin: 0 auto;">
             <div class="text-center" style="margin-bottom: 3rem;">
-                <p style="color:var(--text-secondary); font-size:1.1rem; font-family:var(--font-heading);">
+                <p style="color:var(--text-secondary); font-size:1.1rem; font-family:var(--font-body);">
                     "VAYO is where memory meets flame. A journey through the senses."
                 </p>
             </div>
